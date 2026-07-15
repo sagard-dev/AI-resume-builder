@@ -12,13 +12,17 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleGenerateReport = async () => {
-    const resumeFile = resumeInputRef.files[0];
+    const resumeFile = resumeInputRef.current.files[0];
     const data = await generateReport({
       jobDescription,
       selfDescription,
       resumeFile,
     });
-    navigate(`/interview/${data._id}`);
+    console.log("returned data:", data);
+
+    if (data) {
+      navigate(`/interview/${data._id}`);
+    }
   };
 
   if (loading) {
