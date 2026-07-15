@@ -13,10 +13,13 @@ app.use(
   }),
 );
 
-/* require all the routes here */
+/* require all the auth routes here */
 const authRouter = require("./routes/auth.routes");
+/* require all the interview routes here */
+const interviewRouter = require("./routes/interview.routes");
 
 /* using all the routes here */
 app.use("/api/auth", authRouter);
+app.use("/api/interview", interviewRouter);
 
 module.exports = app;
