@@ -140,6 +140,11 @@ const geminiResponseSchema = {
         required: ["day", "focus", "tasks"],
       },
     },
+    title: {
+      type: "string",
+      description:
+        "The title of the job for which the interview report is generated",
+    },
   },
   required: [
     "matchScore",
@@ -147,6 +152,7 @@ const geminiResponseSchema = {
     "behavioralQuestions",
     "skillGaps",
     "preparationPlan",
+    "title",
   ],
 };
 
