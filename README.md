@@ -10,3 +10,12 @@ An AI-powered Resume Builder built with the MERN stack that helps users generate
 - ✨ Smart resume improvement using Gemini AI
 - 📱 Responsive UI
 - ☁️ MongoDB database integration
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React
+- SCSS
+- Axios
+- React Router
+
