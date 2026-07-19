@@ -19,3 +19,11 @@ An AI-powered Resume Builder built with the MERN stack that helps users generate
 - Axios
 - React Router
 
+**Backend**
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- Google Gemini AI
+- JWT Authentication
+- Multer
+- Puppeteer
